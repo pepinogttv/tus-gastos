@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/graphic.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your expense</h1>
+    </header>
+    <main>
+      <div class="container-select">
+        <small>Selecciona una cuenta</small>
+        <select>
+          <option>Efectivo</option>
+          <option>MercadoPago</option>
+          <option>Todas las cuentas</option>
+        </select>
+      </div>
+      <div class="container-buttons">
+        <button>Agregar ingresos</button>
+        <button>Agregar gastos</button>
+      </div>
+      <div class="balance-sheet-detail">
+        <h1>Balance: $56.000</h1>
+        <div>
+          <p>Monthly balance sheet detail</p>
+          <small>September, 2022</small>
+          <ul>
+            <li>
+              <span class="sign">+</span>
+              <span>Income</span>
+              <span>$70,300.00</span>
+            </li>
+            <li>
+              <span class="sign">+</span>
+              <span>Previous balance</span>
+              <span>$0.00</span>
+            </li>
+            <li>
+              <span class="sign">-</span>
+              <span>Bills</span>
+              <span>$14.300</span>
+            </li>
+            <li>
+              <span class="sign">=</span>
+              <span>Balance</span>
+              <span>$56.000</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="summary">
+        <h2>Monthly summary</h2>
+        <div id="graphic">
+          <div class="shadow"></div>
+          <div class="donut-hole"></div>
+          <div class="cutout" style="transform: rotate(0deg)">
+            <div
+              class="portion"
+              style="
+                background-color: rgb(220, 220, 220);
+                transform: rotate(72deg);
+              "
+            ></div>
+          </div>
+          <div class="cutout" style="transform: rotate(72deg)">
+            <div
+              class="portion"
+              style="
+                background-color: rgb(128, 128, 128);
+                transform: rotate(72deg);
+              "
+            ></div>
+          </div>
+          <div class="cutout" style="transform: rotate(144deg)">
+            <div
+              class="portion"
+              style="
+                background-color: rgb(119, 136, 153);
+                transform: rotate(72deg);
+              "
+            ></div>
+          </div>
+          <div class="cutout" style="transform: rotate(216deg)">
+            <div
+              class="portion"
+              style="
+                background-color: rgb(47, 79, 79);
+                transform: rotate(72deg);
+              "
+            ></div>
+          </div>
+          <div class="cutout" style="transform: rotate(288deg)">
+            <div
+              class="portion"
+              style="
+                background-color: rgb(112, 128, 144);
+                transform: rotate(72deg);
+              "
+            ></div>
+          </div>
+        </div>
+        <ol class="summary-list">
+          <li>
+            <span class="number" style="background: #dcdcdc">1</span>
+            <span>Diversion</span>
+            <span>$9.000</span>
+          </li>
+          <li>
+            <span class="number" style="background: #808080">2</span>
+            <span>Personales</span>
+            <span>$4.000</span>
+          </li>
+          <li>
+            <span class="number" style="background: #778899">3</span>
+            <span>Comida</span>
+            <span>$5.000</span>
+          </li>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
